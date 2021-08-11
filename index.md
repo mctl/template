@@ -1,5 +1,5 @@
 ---
-title: TopList
+title: <%= upperCamelName %>
 nav:
   title: Charts
   path: /charts
@@ -8,7 +8,7 @@ group:
   title: 图表
 ---
 
-## TopList
+## <%= upperCamelName %>
 
 
 <code src='./example/demo.tsx'>

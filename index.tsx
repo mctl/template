@@ -1,19 +1,19 @@
 import React, { ReactNode, ReactText, FC, CSSProperties } from 'react'
 import classNames from 'classnames'
 
-export interface <%= name + 'Props' %> {
+export interface <%= upperCamelName + 'Props' %> {
   className?: string;
   style?: CSSProperties;
 }
 
-const <%= name %>: FC<<%= name + 'Props' %>> = (props) => {
+const <%= upperCamelName %>: FC<<%= upperCamelName + 'Props' %>> = (props) => {
 
   const {
     className,
     style
   } = props
   
-  const rootClassNames = classNames(className, 'zet-top-list')
+  const rootClassNames = classNames(className, 'zet-<%= name %>')
 
   return (
     <div className={rootClassNames} style={{...style}}>
@@ -22,4 +22,4 @@ const <%= name %>: FC<<%= name + 'Props' %>> = (props) => {
   )
 }
 
-export default <%= name %>
+export default <%= upperCamelName %>
