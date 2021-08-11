@@ -3,10 +3,10 @@
  */
 
  import React from 'react'
- import TopList from '..'
+ import <%= upperCamelName %> from '..'
  
  export default () => {
    return (
-     <div>TopList</div>
+     <div><%= upperCamelName %></div>
    )
  }
