@@ -1,5 +1,6 @@
 import React, { ReactNode, ReactText, FC, CSSProperties } from 'react'
 import classNames from 'classnames'
+import './index.less'
 
 export interface <%= upperCamelName + 'Props' %> {
   className?: string;
